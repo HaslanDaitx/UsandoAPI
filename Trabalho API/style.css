@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("./imagem/fundo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+}
+
+.container {
+    background: rgb(199, 49, 49);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    border: 4px dashed white;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.pesquisar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.pesquisar input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.error-message {
+    color: rgb(51, 13, 216);
+    margin-top: 10px;
+    display: none;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 0;
+    width: 100%;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.error-message {
+    color: rgb(51, 13, 216);
+    margin-top: 10px;
+    display: none;
+}
+
+#limparButton {
+    background: #045a13;
+}
+
+#limparButton:hover {
+    background: #0b8d11;
+}
+
+@media (min-width: 600px) {
+    .button-group {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    button {
+        margin: 0 5px;
+        width: auto;
+    }
+}
